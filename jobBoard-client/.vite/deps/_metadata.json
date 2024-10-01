@@ -1,0 +1,64 @@
+{
+  "hash": "5e7dbae3",
+  "configHash": "83d240ad",
+  "lockfileHash": "ef32bcde",
+  "browserHash": "ed5d9da7",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "ceb496b6",
+      "needsInterop": true
+    },
+    "@mui/material": {
+      "src": "../../node_modules/@mui/material/index.js",
+      "file": "@mui_material.js",
+      "fileHash": "6d3d38fc",
+      "needsInterop": false
+    },
+    "@mui/icons-material/WorkOutline": {
+      "src": "../../node_modules/@mui/icons-material/esm/WorkOutline.js",
+      "file": "@mui_icons-material_WorkOutline.js",
+      "fileHash": "4997ac07",
+      "needsInterop": false
+    },
+    "@mui/material/styles": {
+      "src": "../../node_modules/@mui/material/styles/index.js",
+      "file": "@mui_material_styles.js",
+      "fileHash": "9a11abab",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "0d555a3e",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "fa8c2555",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-WYZIWET2": {
+      "file": "chunk-WYZIWET2.js"
+    },
+    "chunk-2DSZ5SA7": {
+      "file": "chunk-2DSZ5SA7.js"
+    },
+    "chunk-RP35K7ME": {
+      "file": "chunk-RP35K7ME.js"
+    },
+    "chunk-JMVEG3FK": {
+      "file": "chunk-JMVEG3FK.js"
+    },
+    "chunk-TWJRYSII": {
+      "file": "chunk-TWJRYSII.js"
+    },
+    "chunk-DC5AMYBS": {
+      "file": "chunk-DC5AMYBS.js"
+    }
+  }
+}
