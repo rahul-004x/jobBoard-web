@@ -13,7 +13,7 @@ app.get('/api/jobs', async (req, res) => {
   const { query } = req.query;
 
   try {
-    const serpApiUrl = `https://serpapi.com/search.json?engine=google_jobs&q=${query}&api_key=${process.env.SERP_API_KEY}`;
+    const serpApiUrl = `https://serpapi.com/search.json?engine=google_jobs&q=${query}&num=20&api_key=${process.env.SERP_API_KEY}`;
     const response = await axios.get(serpApiUrl);
     res.json(response.data.jobs_results || []);
   } catch (error) {

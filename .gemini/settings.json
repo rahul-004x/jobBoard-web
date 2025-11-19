@@ -1,0 +1,10 @@
+{
+  "general": {
+    "previewFeatures": true
+  },
+  "context": {
+    "fileFiltering": {
+      "enableRecursiveFileSearch": false
+    }
+  }
+}
