@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
-import { TextField, Button, CircularProgress, Box, InputAdornment } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
+import React, { useState } from "react";
+import {
+  TextField,
+  Button,
+  CircularProgress,
+  Box,
+  InputAdornment,
+} from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 
 const SearchBar = ({ onSearch, loading }) => {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -17,16 +23,16 @@ const SearchBar = ({ onSearch, loading }) => {
       component="form"
       onSubmit={handleSearch}
       sx={{
-        display: 'flex',
-        justifyContent: 'center',
+        display: "flex",
+        justifyContent: "center",
         mt: 6,
         mb: 4,
-        maxWidth: '600px',
-        mx: 'auto'
+        maxWidth: "600px",
+        mx: "auto",
       }}
     >
       <TextField
-        placeholder="Search for jobs (e.g. 'React Developer in New York')"
+        placeholder="Search for jobs (e.g. 'React Developer in New Delhi')"
         variant="outlined"
         fullWidth
         value={query}
@@ -38,12 +44,12 @@ const SearchBar = ({ onSearch, loading }) => {
             </InputAdornment>
           ),
           sx: {
-            borderRadius: '12px 0 0 12px',
-            bgcolor: 'white',
-            '& fieldset': { borderRight: 'none' },
-            '&:hover fieldset': { borderColor: '#2563eb' },
-            '&.Mui-focused fieldset': { borderColor: '#2563eb' }
-          }
+            borderRadius: "12px 0 0 12px",
+            bgcolor: "white",
+            "& fieldset": { borderRight: "none" },
+            "&:hover fieldset": { borderColor: "#2563eb" },
+            "&.Mui-focused fieldset": { borderColor: "#2563eb" },
+          },
         }}
       />
       <Button
@@ -52,18 +58,18 @@ const SearchBar = ({ onSearch, loading }) => {
         disabled={loading}
         disableElevation
         sx={{
-          borderRadius: '0 12px 12px 0',
+          borderRadius: "0 12px 12px 0",
           px: 4,
-          textTransform: 'none',
-          fontSize: '1rem',
+          textTransform: "none",
+          fontSize: "1rem",
           fontWeight: 600,
-          backgroundColor: '#2563eb',
-          '&:hover': {
-            backgroundColor: '#1d4ed8',
-          }
+          backgroundColor: "#2563eb",
+          "&:hover": {
+            backgroundColor: "#1d4ed8",
+          },
         }}
       >
-        {loading ? <CircularProgress size={24} color="inherit" /> : 'Search'}
+        {loading ? <CircularProgress size={24} color="inherit" /> : "Search"}
       </Button>
     </Box>
   );
